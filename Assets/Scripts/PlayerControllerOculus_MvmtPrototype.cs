@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.VR;
 using System.Collections;
 
-public class PlayerControllerOculus : MonoBehaviour
+public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
 {
 
     public float movementSpeed;

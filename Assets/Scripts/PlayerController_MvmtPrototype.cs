@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController_MvmtPrototype : MonoBehaviour {
 
     public float movementSpeed;
     public float rotationSpeed;
