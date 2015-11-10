@@ -17,6 +17,14 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    void Update()
+    {
+        if (Input.GetKey("joystick button 1") )
+        {
+            InputTracking.Recenter();
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
