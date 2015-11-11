@@ -30,7 +30,6 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
     {
         float moveVertical = Input.GetAxis("Vertical");
         float rotateHorizontal = Input.GetAxis("Horizontal");
-        float oculusRotation = InputTracking.GetLocalRotation(VRNode.Head).eulerAngles.y;
         float rotation = transform.rotation.eulerAngles.y;
         
         if (VRSettings.enabled)
