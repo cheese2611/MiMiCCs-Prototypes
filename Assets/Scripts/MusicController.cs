@@ -3,8 +3,6 @@ using System.Collections;
 
 public class MusicController : MonoBehaviour
 {
-    public AudioClip roomMusic;
-
     private AudioSource source;
 
     void Awake()
@@ -14,6 +12,6 @@ public class MusicController : MonoBehaviour
 
     public void playMusic()
     {
-        source.PlayOneShot(roomMusic, 1F);
+        source.Play();
     }
 }
