@@ -3,14 +3,14 @@ using System.Collections;
 
 public class TriggerHandler : MonoBehaviour {
     
-    public GameObject music;
+    public MusicController musicController;
 
     private bool musicPlayed = false;
 	
 	void OnTriggerEnter (Collider other) {
         if (!musicPlayed)
         {
-            music.GetComponent<MusicController>().playMusic();
+            musicController.playMusic();
             musicPlayed = true;
         }
         
