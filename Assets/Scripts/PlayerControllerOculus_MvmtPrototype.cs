@@ -30,10 +30,16 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
     {
         float moveVertical = Input.GetAxis("Vertical");
         float rotateHorizontal = Input.GetAxis("Horizontal");
-        float oculusRotation = InputTracking.GetLocalRotation(VRNode.Head).eulerAngles.y;
         float rotation = transform.rotation.eulerAngles.y;
+        
+        if (VRSettings.enabled)
+        {
+            float oculusRotation = InputTracking.GetLocalRotation(VRNode.Head).eulerAngles.y;
+            rotation += oculusRotation;
+        }
+        
 
-        Vector3 movementForward = new Vector3(moveVertical * Mathf.Sin((rotation + oculusRotation) * Mathf.Deg2Rad), 0.0f, moveVertical * Mathf.Cos((rotation + oculusRotation) * Mathf.Deg2Rad));
+        Vector3 movementForward = new Vector3(moveVertical * Mathf.Sin(rotation * Mathf.Deg2Rad), 0.0f, moveVertical * Mathf.Cos(rotation * Mathf.Deg2Rad));
 
         Quaternion turnVertical = transform.rotation * Quaternion.Euler(0.0f, rotateHorizontal * rotationSpeed, 0.0f);
 
