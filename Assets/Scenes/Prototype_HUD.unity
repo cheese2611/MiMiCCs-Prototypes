@@ -220,7 +220,7 @@ RectTransform:
   - {fileID: 237310705}
   - {fileID: 1211951543}
   m_Father: {fileID: 784759907}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -30, y: -35}
@@ -583,7 +583,7 @@ RectTransform:
   - {fileID: 1268785205}
   - {fileID: 594459954}
   m_Father: {fileID: 784759907}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 30, y: -35}
@@ -1386,12 +1386,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1107960348}
   - {fileID: 1022714140}
-  - {fileID: 341455708}
+  - {fileID: 1107960348}
   - {fileID: 1334867776}
-  - {fileID: 2025546813}
+  - {fileID: 341455708}
   - {fileID: 154796484}
+  - {fileID: 2025546813}
   - {fileID: 867863825}
   - {fileID: 2006444249}
   m_Father: {fileID: 868615892}
@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 0}
   m_HandleRect: {fileID: 367908648}
   m_Direction: 0
-  m_MinValue: -1
+  m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
@@ -2025,7 +2025,7 @@ RectTransform:
   - {fileID: 1294857659}
   - {fileID: 588069826}
   m_Father: {fileID: 784759907}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -65, y: 0}
@@ -2333,7 +2333,7 @@ RectTransform:
   - {fileID: 558705725}
   - {fileID: 66030047}
   m_Father: {fileID: 784759907}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -65, y: 0}
@@ -2759,7 +2759,7 @@ RectTransform:
   - {fileID: 1830699276}
   - {fileID: 1547323762}
   m_Father: {fileID: 784759907}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 30, y: -35}
@@ -4034,7 +4034,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 0}
   m_HandleRect: {fileID: 1636129194}
   m_Direction: 0
-  m_MinValue: -1
+  m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
@@ -4072,7 +4072,7 @@ RectTransform:
   - {fileID: 1602682212}
   - {fileID: 2003012166}
   m_Father: {fileID: 784759907}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: -30, y: -35}
