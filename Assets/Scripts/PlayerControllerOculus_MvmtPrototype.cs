@@ -11,7 +11,6 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
 
     private Rigidbody rb;
 
-    // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -19,7 +18,7 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey("joystick button 1") )
+        if (VRSettings.enabled & Input.GetKey("RecenterCamera") )
         {
             InputTracking.Recenter();
         }
@@ -28,8 +27,8 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float moveVertical = Input.GetAxis("Vertical");
-        float rotateHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("MovementWalk");
+        float rotateHorizontal = Input.GetAxis("MovementTurn");
         float rotation = transform.rotation.eulerAngles.y;
         
         if (VRSettings.enabled)
@@ -38,7 +37,6 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
             rotation += oculusRotation;
         }
         
-
         Vector3 movementForward = new Vector3(moveVertical * Mathf.Sin(rotation * Mathf.Deg2Rad), 0.0f, moveVertical * Mathf.Cos(rotation * Mathf.Deg2Rad));
 
         Quaternion turnVertical = transform.rotation * Quaternion.Euler(0.0f, rotateHorizontal * rotationSpeed, 0.0f);
