@@ -20,8 +20,8 @@ public class TorchController : MonoBehaviour {
     void Update()
     {
         // rotationY == rotation along y-axis, meaning "horizontal"
-        float rotationY = Input.GetAxis("HorizontalRight");
-        float rotationX = Input.GetAxis("VerticalRight");
+        float rotationY = Input.GetAxis("RightHandHorizontal");
+        float rotationX = Input.GetAxis("RightHandVertical");
 
         if (invertY)
         {
