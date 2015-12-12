@@ -4,26 +4,27 @@ using System.Collections;
 public class ObjectInteraction : MonoBehaviour {
 
     private Behaviour halo;
-    private int timeoutCounter;
+    private bool playerInteracts;
 
     void Start()
     {
         halo = (Behaviour)GetComponent("Halo");
         halo.enabled = false;
-        timeoutCounter = 60;
+        playerInteracts = false;
     }
 
     void Update()
     {
-        Debug.Log("timeoutCounter: " + timeoutCounter);
+        Debug.Log("timeoutCounter: " + playerInteracts);
 
-        if (timeoutCounter == 0)
+        // turn off highlight if player didn't look at it in previous frame
+        if (!playerInteracts)
         {
             halo.enabled = false;
         }
-        else if (timeoutCounter > 0)
+        else
         {
-            timeoutCounter--;
+            playerInteracts = false;
         }
     }
 
@@ -31,7 +32,7 @@ public class ObjectInteraction : MonoBehaviour {
     {
         halo.enabled = true;
         Debug.Log(this.name + " highlighted!");
-        timeoutCounter++;
+        playerInteracts = true;
     }
 
     public void PickUp()
