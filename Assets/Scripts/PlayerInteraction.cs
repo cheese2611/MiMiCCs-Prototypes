@@ -17,6 +17,11 @@ public class PlayerInteraction : MonoBehaviour {
             // call hit.collider.GetComponent<ObjectInteraction>().Highlight(); to activate highlight function of hit object (check if null/exists first!)
             if (hit.collider.GetComponent<ObjectInteraction>()) {
                 hit.collider.GetComponent<ObjectInteraction>().Highlight();
+
+                if (Input.GetButton("Interaction"))
+                {
+                    hit.collider.GetComponent<ObjectInteraction>().PickUp();
+                }
             }
         }
     }
