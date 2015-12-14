@@ -42,6 +42,9 @@ ModelImporter:
     4300008: cockpit
     4300010: body
     4300012: cockpit_glass
+    6400000: body
+    6400002: cockpit
+    6400004: cockpit_glass
     7400000: Take 001
     9500000: //RootNode
   materials:
@@ -69,7 +72,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .5
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
