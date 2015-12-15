@@ -24,5 +24,9 @@ public class PlayerInteraction : MonoBehaviour {
                 }
             }
         }
+        else
+        {
+            Debug.DrawLine(transform.position, transform.position + interactionRange * fwd, Color.red);
+        }
     }
 }
