@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class LightningBolt : MonoBehaviour
+public class Electricity : MonoBehaviour
 {
 	
 	void Start ()
