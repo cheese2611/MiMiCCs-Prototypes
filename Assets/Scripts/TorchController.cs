@@ -42,7 +42,7 @@ public class TorchController : MonoBehaviour {
         }
 
         // toggle light
-        if (Input.GetButtonDown("Flashlight"))
+        if (Input.GetButtonDown("RightHandAction"))
         {
             ToggleTorch();
         }
