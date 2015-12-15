@@ -18,7 +18,7 @@ public class PlayerControllerOculus_MvmtPrototype : MonoBehaviour
 
     void Update()
     {
-        if (VRSettings.enabled & Input.GetKey("RecenterCamera") )
+        if (VRSettings.enabled & Input.GetButton("RecenterCamera") )
         {
             InputTracking.Recenter();
         }
