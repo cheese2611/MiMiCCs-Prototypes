@@ -7,26 +7,29 @@ public class PlayerInteraction : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
         RaycastHit hit;
-
-        if (Physics.Raycast(transform.position, fwd, out hit, interactionRange) && (hit.collider.gameObject.name != "Player"))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, interactionRange, -1, QueryTriggerInteraction.Ignore) && (hit.collider.gameObject.tag != "Player"))
         {
             Debug.DrawLine(transform.position, hit.point, Color.red);
-            Debug.Log("Collider of object " + hit.collider.gameObject.name + " hit!");
-            // call hit.collider.GetComponent<ObjectInteraction>().Highlight(); to activate highlight function of hit object (check if null/exists first!)
-            if (hit.collider.GetComponent<ObjectInteraction>()) {
-                hit.collider.GetComponent<ObjectInteraction>().Highlight();
-
+            Debug.Log("Collider of object '" + hit.collider.gameObject.name + "' hit!");
+            ObjectInteraction objInteract = hit.collider.GetComponent<ObjectInteraction>();
+            if (objInteract)
+            {
+                objInteract.Highlight();
                 if (Input.GetButton("Interaction"))
                 {
-                    hit.collider.GetComponent<ObjectInteraction>().PickUp();
+                    objInteract.PickUp();
+                    Debug.Log("Picked up " + objInteract.gameObject.name);
+                    if (objInteract.gameObject.name == "Keycard")
+                    {
+                        GameObject.Find("LevelController").GetComponent<Animator>().SetTrigger("KeycardTaken");
+                    }
                 }
             }
         }
         else
         {
-            Debug.DrawLine(transform.position, transform.position + interactionRange * fwd, Color.red);
+            Debug.DrawLine(transform.position, transform.position + interactionRange * transform.forward, Color.red);
         }
     }
 }

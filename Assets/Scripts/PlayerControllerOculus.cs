@@ -28,12 +28,11 @@ public class PlayerControllerOculus : MonoBehaviour
     {
         float movementInput = Input.GetAxis("MovementWalk");
         float rotationInput = Input.GetAxis("MovementTurn");
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
 
         float movement = movementInput * movementSpeed;
         float rotation = rotationInput * rotationSpeed;
         transform.Rotate(0, rotation, 0);
-        character.SimpleMove(forward * movement);
+        character.SimpleMove(transform.forward * movement);
     }
 
     private void MoveCamera()
