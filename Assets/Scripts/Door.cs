@@ -3,42 +3,87 @@ using System.Collections;
 
 public class Door : MonoBehaviour {
 
-    Animation anim;
-    bool isInRange = false;
-    bool isOpen = false;
+    public bool isEnabled = true;
+    public bool reactToPlayer = true;
+    public float minimum = 0.075f;
+    public float maximum = 2.3f;
+    public float speed = 0.05f;
+    public float goal = 0f;
+
+    Transform door;
 
     void Start()
     {
-        anim = transform.parent.GetChild(1).gameObject.GetComponent<Animation>();
+        door = transform.parent.GetChild(1);
     }
 
     void Update()
     {
-        if (!anim.isPlaying)
+        goal = Mathf.Min(maximum, Mathf.Max(minimum, goal));
+
+        if (isEnabled)
         {
-            if (isInRange != isOpen)
+            Vector3 doorPos = door.position;
+            float state = AbsToRel(doorPos.y);
+            float diff = goal - state;
+            if (Mathf.Abs(diff) > 0f)
             {
-                if (isInRange)
+                if (Mathf.Abs(diff) > speed)
                 {
-                    anim.Play("Door_Open");
-                    isOpen = true;
+                    state += speed * Mathf.Sign(diff);
                 }
                 else
                 {
-                    anim.Play("Door_Close");
-                    isOpen = false;
+                    state += diff;
                 }
             }
+            doorPos.y = RelToAbs(state);
+            door.position = doorPos;
         }
+    }
+
+    float AbsToRel(float input)
+    {
+        return (input - minimum) / (maximum - minimum);
+    }
+
+    float RelToAbs(float input)
+    {
+        return minimum + input * (maximum - minimum);
+    }
+
+    public void GoToGoal(float input)
+    {
+        goal = input;
+    }
+
+    public void Open()
+    {
+        GoToGoal(1f);
+    }
+
+    public void Close()
+    {
+        GoToGoal(0f);
     }
 
     void OnTriggerEnter(Collider obj)
     {
-        isInRange = true;
+        if (obj.gameObject.tag == "Player")
+        {
+            GameObject.Find("LevelController").GetComponent<Animator>().SetTrigger("IsAtDoor");
+        }
+        if (reactToPlayer && obj.gameObject.tag == "Player")
+        {
+            Open();
+        }
     }
 
     void OnTriggerExit(Collider obj)
     {
-        isInRange = false;
+        if (reactToPlayer && obj.gameObject.tag == "Player")
+        {
+            Close();
+        }
     }
 }
