@@ -69,10 +69,6 @@ public class Door : MonoBehaviour {
 
     void OnTriggerEnter(Collider obj)
     {
-        if (obj.gameObject.tag == "Player")
-        {
-            GameObject.Find("LevelController").GetComponent<Animator>().SetTrigger("IsAtDoor");
-        }
         if (reactToPlayer && obj.gameObject.tag == "Player")
         {
             Open();

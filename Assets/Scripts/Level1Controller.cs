@@ -7,24 +7,24 @@ public class Level1Controller : StateMachineBehaviour {
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (stateInfo.IsName("FindExit"))
         {
-            Debug.Log("Enter State 'FindExit'");
             GameObject.Find("FindExit").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("FindKeycard"))
         {
-            Debug.Log("Enter State 'FindKeycard'");
             GameObject.Find("FindKeycard").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("GoToTerminal"))
         {
-            Debug.Log("Enter State 'GoToTerminal'");
             GameObject.Find("GoToTerminal").GetComponent<Animator>().SetTrigger("PlayAnimation");
+        }
+        else if (stateInfo.IsName("Escape"))
+        {
+            GameObject.Find("Escape").GetComponent<Animator>().SetTrigger("PlayAnimation");
+            GameObject.Find("Exit").GetComponentInChildren<Door>().Open();
         }
         else if (stateInfo.IsName("GameOver"))
         {
-            Debug.Log("Enter State 'GameOver'");
             GameObject.Find("GameOver").GetComponent<Animator>().SetTrigger("PlayAnimation");
-            GameObject.Find("Exit").GetComponentInChildren<Door>().Open();
         }
     }
 
@@ -54,7 +54,7 @@ public class Level1Controller : StateMachineBehaviour {
     //}
 
     // OnStateMachineExit is called when exiting a statemachine via its Exit Node
-    //override public void OnStateMachineExit(Animator animator, int stateMachinePathHash) {
-    //
-    //}
+    override public void OnStateMachineExit(Animator animator, int stateMachinePathHash) {
+        Application.LoadLevel(Application.loadedLevel);
+    }
 }
