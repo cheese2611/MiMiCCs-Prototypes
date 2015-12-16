@@ -19,7 +19,7 @@ public class Door : MonoBehaviour {
 
     void Update()
     {
-        goal = Mathf.Min(maximum, Mathf.Max(minimum, goal));
+        goal = Mathf.Min(1f, Mathf.Max(0f, goal));
 
         if (isEnabled)
         {
