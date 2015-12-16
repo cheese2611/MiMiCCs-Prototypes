@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class HUDController : MonoBehaviour {
+public class ClockController : MonoBehaviour {
     public Text uhr;
 
 	void Update () {
