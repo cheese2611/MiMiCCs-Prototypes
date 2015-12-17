@@ -8,7 +8,7 @@ public class PlayerInteraction : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, interactionRange, -1, QueryTriggerInteraction.Ignore) && (hit.collider.gameObject.tag != "Player"))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, interactionRange/*, -1, QueryTriggerInteraction.Ignore*/) && (hit.collider.gameObject.tag != "Player"))
         {
             Debug.DrawLine(transform.position, hit.point, Color.red);
             Debug.Log("Collider of object '" + hit.collider.gameObject.name + "' hit!");
