@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 62d1984268907994ab7e1e59a6bd1340
-timeCreated: 1450361627
+timeCreated: 1450389777
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -9,9 +9,9 @@ SubstanceImporter:
     name: MetalWalls_Tiling_1.5x0.2_Offset_0.25x0.8
     prototypeName: LASciFiPanel
     shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+    shaderKeywords: _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
     renderQueue: -1
-    lightmapFlags: 1
+    lightmapFlags: 5
     inputs:
     - name: $outputsize
       value:
@@ -196,15 +196,15 @@ SubstanceImporter:
             name: _MainTex
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
+            scale: {x: 1.5, y: .200000003}
+            offset: {x: .25, y: .800000012}
         data:
           first:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
+            scale: {x: 1.5, y: .200000003}
+            offset: {x: .25, y: .800000012}
         data:
           first:
             name: _DetailNormalMap
@@ -217,22 +217,22 @@ SubstanceImporter:
             name: _ParallaxMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
+            scale: {x: 1.5, y: .200000003}
+            offset: {x: .25, y: .800000012}
         data:
           first:
             name: _OcclusionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
+            scale: {x: 1.5, y: .200000003}
+            offset: {x: .25, y: .800000012}
         data:
           first:
             name: _EmissionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
+            scale: {x: 1.5, y: .200000003}
+            offset: {x: .25, y: .800000012}
         data:
           first:
             name: _DetailMask
@@ -252,8 +252,8 @@ SubstanceImporter:
             name: _SpecGlossMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
+            scale: {x: 1.5, y: .200000003}
+            offset: {x: .25, y: .800000012}
       floats:
         data:
           first:

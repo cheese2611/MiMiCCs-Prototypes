@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b4001d9ec3640d84b940da7e1a11034f
-timeCreated: 1450358129
+timeCreated: 1450389802
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -9,9 +9,9 @@ SubstanceImporter:
     name: MetalWalls_Tiling_5x1
     prototypeName: LASciFiPanel
     shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+    shaderKeywords: _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
     renderQueue: -1
-    lightmapFlags: 1
+    lightmapFlags: 5
     inputs:
     - name: $outputsize
       value:
@@ -196,14 +196,14 @@ SubstanceImporter:
             name: _MainTex
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 5, y: 1}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 5, y: 1}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -217,21 +217,21 @@ SubstanceImporter:
             name: _ParallaxMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 5, y: 1}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _OcclusionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 5, y: 1}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _EmissionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 5, y: 1}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -252,7 +252,7 @@ SubstanceImporter:
             name: _SpecGlossMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 5, y: 1}
             offset: {x: 0, y: 0}
       floats:
         data:

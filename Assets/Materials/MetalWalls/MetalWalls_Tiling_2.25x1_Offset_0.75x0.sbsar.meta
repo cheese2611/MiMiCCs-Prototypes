@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b4f78349c649bae4b9d31077ef9b3df4
-timeCreated: 1450362340
+timeCreated: 1450389772
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -9,9 +9,9 @@ SubstanceImporter:
     name: MetalWalls_Tiling_2.25x1_Offset_0.75x0
     prototypeName: LASciFiPanel
     shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
+    shaderKeywords: _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
     renderQueue: -1
-    lightmapFlags: 1
+    lightmapFlags: 5
     inputs:
     - name: $outputsize
       value:
@@ -204,7 +204,7 @@ SubstanceImporter:
           second:
             texture: {instanceID: 0}
             scale: {x: 2.25, y: 1}
-            offset: {x: .699999988, y: 0}
+            offset: {x: .75, y: 0}
         data:
           first:
             name: _DetailNormalMap
@@ -218,14 +218,14 @@ SubstanceImporter:
           second:
             texture: {instanceID: 0}
             scale: {x: 2.25, y: 1}
-            offset: {x: .699999988, y: 0}
+            offset: {x: .75, y: 0}
         data:
           first:
             name: _OcclusionMap
           second:
             texture: {instanceID: 0}
             scale: {x: 2.25, y: 1}
-            offset: {x: .699999988, y: 0}
+            offset: {x: .75, y: 0}
         data:
           first:
             name: _EmissionMap
@@ -253,7 +253,7 @@ SubstanceImporter:
           second:
             texture: {instanceID: 0}
             scale: {x: 2.25, y: 1}
-            offset: {x: .699999988, y: 0}
+            offset: {x: .75, y: 0}
       floats:
         data:
           first:
