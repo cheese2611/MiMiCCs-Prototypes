@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: d06df3cf0f7e34b4f8c98977ff44f4fc
-timeCreated: 1450362138
+guid: afcc1112922e5bf40b3d5b1e8f01b8b7
+timeCreated: 1450358376
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 16
-    name: MetalWalls_Tiling_2x1
+    name: MetalWalls_Tiling_1.2x1
     prototypeName: LASciFiPanel
     shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
     shaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
@@ -184,7 +184,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 2, y: 1}
+      scale: {x: 1.20000005, y: 1}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 0
@@ -196,7 +196,7 @@ SubstanceImporter:
             name: _MainTex
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 1.20000005, y: 1}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -231,7 +231,7 @@ SubstanceImporter:
             name: _EmissionMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 1.20000005, y: 1}
             offset: {x: 0, y: 0}
         data:
           first:
@@ -317,42 +317,42 @@ SubstanceImporter:
             name: _SpecColor
           second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
     textureParameters:
-    - name: MetalWalls_Tiling_2x1_diffuse
+    - name: MetalWalls_Tiling_1.2x1_diffuse
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_2x1_normal
+    - name: MetalWalls_Tiling_1.2x1_normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_2x1_specular
+    - name: MetalWalls_Tiling_1.2x1_specular
       alphaSource: 7
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_2x1_emissive
+    - name: MetalWalls_Tiling_1.2x1_emissive
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_2x1_ambientOcclusion
+    - name: MetalWalls_Tiling_1.2x1_ambientOcclusion
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_2x1_height
+    - name: MetalWalls_Tiling_1.2x1_height
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_2x1_baseColor
+    - name: MetalWalls_Tiling_1.2x1_baseColor
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_2x1_metallic
+    - name: MetalWalls_Tiling_1.2x1_metallic
       alphaSource: 7
       filterMode: 1
       aniso: 1

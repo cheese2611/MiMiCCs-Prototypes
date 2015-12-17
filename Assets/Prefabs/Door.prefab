@@ -46,6 +46,8 @@ GameObject:
   - 65: {fileID: 6500000}
   - 135: {fileID: 13500000}
   - 114: {fileID: 11411332}
+  - 95: {fileID: 9549370}
+  - 114: {fileID: 11429122}
   m_Layer: 0
   m_Name: base
   m_TagString: Untagged
@@ -81,7 +83,6 @@ GameObject:
   - 33: {fileID: 3300006}
   - 23: {fileID: 2300006}
   - 65: {fileID: 6500002}
-  - 111: {fileID: 11169612}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -313,22 +314,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5, y: .400000006, z: 2.9000001}
   m_Center: {x: 0, y: 0, z: 1.5}
---- !u!111 &11169612
-Animation:
+--- !u!95 &9549370
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
+  m_GameObject: {fileID: 100004}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 788698ac0388d224ca96f4fc598e0f1d, type: 2}
-  - {fileID: 7400000, guid: 54882b8bbe843b2409afc26438a4d290, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11411332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -341,9 +343,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  reactToPlayer: 0
   minimum: .075000003
   maximum: 2.29999995
   speed: .0500000007
+  goal: 0
+--- !u!114 &11429122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c230a20434f5d3d48b0155be22fdc64f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: IsAtExit
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
