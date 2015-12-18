@@ -6,4 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prototype_Mvmt_Camera.unity
+    path: Assets/Scenes/Demo.unity
