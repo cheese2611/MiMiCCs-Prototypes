@@ -3,43 +3,26 @@ using System.Collections;
 
 public class TorchController : MonoBehaviour {
 
-    public Light torch;
-    public float horizontalFOV;
-    public float verticalFOV;
-    public float rotationSpeed;
-    public bool absoluteRotation;
     public bool invertY;
 
-    private Quaternion originalRotation;
+    Light torch;
 
     void Start ()
     {
-        originalRotation = transform.rotation;
+        torch = gameObject.GetComponent<Light>();
     }
 
     void Update()
     {
-        // rotationY == rotation along y-axis, meaning "horizontal"
-        float rotationY = Input.GetAxis("RightHandHorizontal");
-        float rotationX = Input.GetAxis("RightHandVertical");
+        float rotationX = Input.GetAxis("RightHandHorizontal");
+        float rotationY = Input.GetAxis("RightHandVertical");
 
         if (invertY)
         {
-            rotationX = -rotationX;
+            rotationY = -rotationY;
         }
 
-        Vector3 rotation = new Vector3(rotationX, rotationY);
-        Vector3 FOV = new Vector3(verticalFOV, horizontalFOV);
-
-        if (absoluteRotation)
-        {
-            transform.Rotate(rotation * rotationSpeed);
-        }
-        else
-        {
-            // multiply components of rotation and FOV vector (Vector3.Scale), transform to Quaternion (Quaternion.Euler)
-            transform.rotation = Quaternion.Slerp(originalRotation, Quaternion.Euler(Vector3.Scale(rotation, FOV)), Time.time * rotationSpeed);
-        }
+        transform.rotation = transform.parent.rotation * Quaternion.FromToRotation(Vector3.forward, new Vector3(rotationX, rotationY, 1));
 
         // toggle light
         if (Input.GetButtonDown("RightHandAction"))
