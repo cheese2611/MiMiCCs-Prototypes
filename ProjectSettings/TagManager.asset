@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Pick up
+  - KeycardSpawn
   layers:
   - Default
   - TransparentFX
