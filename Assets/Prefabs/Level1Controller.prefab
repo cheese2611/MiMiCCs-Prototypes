@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 432994}
   - 95: {fileID: 9585270}
   - 114: {fileID: 11422196}
+  - 114: {fileID: 11447586}
+  - 114: {fileID: 11437312}
   m_Layer: 0
   m_Name: Level1Controller
   m_TagString: Untagged
@@ -23,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104260}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: .707106829, y: -2.98023224e-08, z: -4.47034836e-08, w: .707106709}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,6 +59,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cf76de2194f05b47a8986cc53ad137e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11437312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe546146a7c4e749aafb5277af18622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11447586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09889c8d0ed5e244b804dc570f766ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnObject: {fileID: 130374, guid: ebbaf37744c797742978f6df1eccbe3a, type: 2}
+  spawnTag: KeycardSpawn
+  objectName: Keycard
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

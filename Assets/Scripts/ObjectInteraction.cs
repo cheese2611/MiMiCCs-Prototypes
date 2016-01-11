@@ -15,8 +15,6 @@ public class ObjectInteraction : MonoBehaviour {
 
     void Update()
     {
-        Debug.Log("timeoutCounter: " + playerInteracts);
-
         // turn off highlight if player didn't look at it in previous frame
         if (!playerInteracts)
         {

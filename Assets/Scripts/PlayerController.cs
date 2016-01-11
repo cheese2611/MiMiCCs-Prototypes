@@ -1,44 +1,27 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
-    public float speed;
-    public Text countText;
-    public Text winText;
+    public float movementSpeed;
+    public float rotationSpeed;
 
-    private Rigidbody rb;
-    private int count;
+    CharacterController character;
 
-	void Start () {
-        rb = GetComponent<Rigidbody>();
-        count = 0;
-        SetCountText();
-        winText.text = "";
+    void Start()
+    {
+        character = GetComponent<CharacterController>();
     }
 
-    void FixedUpdate () {
-        float moveHorizontal = Input.GetAxis("MovementTurn");
-        float moveVertical = Input.GetAxis("MovementWalk");
+    void Update()
+    {
+        float movementInput = Input.GetAxis("MovementWalk");
+        float rotationInput = Input.GetAxis("MovementTurn");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
-
-        rb.AddForce(movement * speed);
-	}
-
-    void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Pick up")) {
-            other.gameObject.SetActive(false);
-            count += 1;
-            SetCountText();
-        }
-    }
-
-    void SetCountText() {
-        countText.text = "Count: " + count.ToString();
-        if (count >= 12) {
-            winText.text = "You win!";
-        }
+        float movement = movementInput * movementSpeed;
+        float rotation = rotationInput * rotationSpeed;
+        transform.Rotate(0, rotation, 0);
+        character.SimpleMove(transform.forward * movement);
     }
 }

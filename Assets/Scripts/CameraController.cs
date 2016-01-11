@@ -1,17 +1,32 @@
 ﻿using UnityEngine;
+using UnityEngine.VR;
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
-    public GameObject player;
+    Camera pov;
 
-    private Vector3 offset;
+    void Start () {
+        pov = GetComponentInChildren<Camera>();
+    }
 
-	void Start () {
-        offset = transform.position - player.transform.position;
-	}
-	
-	void LateUpdate () {
-        transform.position = player.transform.position + offset;
-	}
+    void Update () {
+        if (VRSettings.enabled & Input.GetButton("RecenterCamera"))
+        {
+            InputTracking.Recenter();
+        }
+
+        Quaternion rotation = new Quaternion();
+        if (VRSettings.enabled)
+        {
+            rotation = InputTracking.GetLocalRotation(VRNode.Head);
+        }
+        else
+        {
+            float rotationXInput = Input.GetAxis("RightHandHorizontal");
+            float rotationYInput = Input.GetAxis("RightHandVertical");
+            rotation.SetLookRotation(new Vector3(rotationXInput, rotationYInput, 1));
+        }
+        pov.transform.rotation = transform.parent.rotation * rotation;
+    }
 }
