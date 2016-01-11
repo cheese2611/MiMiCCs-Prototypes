@@ -48,6 +48,7 @@ GameObject:
   - 92: {fileID: 9241188}
   - 124: {fileID: 12450976}
   - 81: {fileID: 8193912}
+  - 114: {fileID: 11455140}
   - 114: {fileID: 11427528}
   - 82: {fileID: 8223126}
   m_Layer: 0
@@ -111,7 +112,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: .100000001
+  near clip plane: .00999999978
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -313,6 +314,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invertY: 0
+--- !u!114 &11455140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d660378fc99035e41966925eb4d14e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &12450976
 Behaviour:
   m_ObjectHideFlags: 1
