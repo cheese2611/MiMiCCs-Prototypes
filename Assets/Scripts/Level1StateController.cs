@@ -30,7 +30,7 @@ public class Level1StateController : StateMachineBehaviour {
         else if (stateInfo.IsName("Escape"))
         {
             GameObject.Find("Escape").GetComponent<Animator>().SetTrigger("PlayAnimation");
-            GameObject.Find("Exit").GetComponentInChildren<Door>().Open();
+            GameObject.Find("Exit").GetComponentInChildren<DoorController>().Open();
         }
         else if (stateInfo.IsName("GameOver"))
         {
