@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class HeadsetController : MonoBehaviour {
+public class VoiceController : MonoBehaviour {
 
     public AudioClip[] clips;
     AudioSource audioSrc;

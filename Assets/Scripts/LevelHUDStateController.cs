@@ -13,6 +13,10 @@ public class LevelHUDStateController : StateMachineBehaviour {
         {
             GameObject.Find("Intro").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
+        else if (stateInfo.IsName("Headset"))
+        {
+            GameObject.Find("Headset").GetComponent<HeadsetController>().PlayRandomWhichStartsWith("dark");
+        }
         else if (stateInfo.IsName("CellJitter"))
         {
             GameObject.Find("ElectricLine").GetComponent<ElectricLineAnimator>().SparkEnabled(false);
