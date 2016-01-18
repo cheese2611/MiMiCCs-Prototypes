@@ -45,7 +45,9 @@ public class HeadsetController : MonoBehaviour {
             }
         }
         if (matchingClips.Count == 0)
+        {
             Debug.LogWarning("No clip with name '" + clipStr + "' found");
+        }
         else
         {
             Play(matchingClips[Random.Range(0, matchingClips.Count)]);
