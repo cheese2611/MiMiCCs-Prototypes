@@ -4197,7 +4197,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 442116, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 442116, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4205,7 +4205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 442116, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 442116, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12876,13 +12876,12 @@ GameObject:
 --- !u!114 &548161874
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11492184, guid: 12e0b2b6bea512b4b8b72a798f3a1d81,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 548161873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43458d25ebdd2ed4a8cb50fd2a3b5630, type: 3}
+  m_Script: {fileID: 11500000, guid: 878459e551b8f0e49a529eeea63813aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &548161875
@@ -21824,7 +21823,7 @@ Animator:
   m_GameObject: {fileID: 915000369}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6e30dedde3a616f4dbfe5682802e660f, type: 2}
+  m_Controller: {fileID: 9100000, guid: f0e722ca0c64a1d46b7c8e268d84bb03, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -25300,7 +25299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1081215694
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27381,13 +27380,12 @@ GameObject:
 --- !u!114 &1155276647
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11492184, guid: 12e0b2b6bea512b4b8b72a798f3a1d81,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1155276646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43458d25ebdd2ed4a8cb50fd2a3b5630, type: 3}
+  m_Script: {fileID: 11500000, guid: 878459e551b8f0e49a529eeea63813aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1155276648
@@ -27579,13 +27577,12 @@ GameObject:
 --- !u!114 &1169827945
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11492184, guid: 12e0b2b6bea512b4b8b72a798f3a1d81,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1169827944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43458d25ebdd2ed4a8cb50fd2a3b5630, type: 3}
+  m_Script: {fileID: 11500000, guid: 878459e551b8f0e49a529eeea63813aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1169827946
@@ -31149,13 +31146,12 @@ GameObject:
 --- !u!114 &1318962780
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11492184, guid: 12e0b2b6bea512b4b8b72a798f3a1d81,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318962779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43458d25ebdd2ed4a8cb50fd2a3b5630, type: 3}
+  m_Script: {fileID: 11500000, guid: 878459e551b8f0e49a529eeea63813aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1318962781
@@ -31414,11 +31410,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 440384, guid: ebbaf37744c797742978f6df1eccbe3a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.25
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 440384, guid: ebbaf37744c797742978f6df1eccbe3a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .000500000024
+      value: 1.00049996
       objectReference: {fileID: 0}
     - target: {fileID: 440384, guid: ebbaf37744c797742978f6df1eccbe3a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -45811,7 +45807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1865479256
 Transform:
   m_ObjectHideFlags: 0

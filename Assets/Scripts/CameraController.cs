@@ -11,14 +11,13 @@ public class CameraController : MonoBehaviour {
     }
 
     void Update () {
-        if (VRSettings.enabled & Input.GetButton("RecenterCamera"))
-        {
-            InputTracking.Recenter();
-        }
-
         Quaternion rotation = new Quaternion();
         if (VRSettings.enabled)
         {
+            if (Input.GetButton("RecenterCamera"))
+            {
+                InputTracking.Recenter();
+            }
             rotation = InputTracking.GetLocalRotation(VRNode.Head);
         }
         else
