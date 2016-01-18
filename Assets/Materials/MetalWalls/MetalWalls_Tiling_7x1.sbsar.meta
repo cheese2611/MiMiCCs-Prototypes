@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 8441b58e98d56b5408a4176ab9f8b092
-timeCreated: 1453132141
+guid: 029e04b8106817f48913751103f82ae3
+timeCreated: 1453133068
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
   materialInstances:
   - serializedVersion: 16
-    name: MetalWalls_Tiling_0.5x1
+    name: MetalWalls_Tiling_7x1
     prototypeName: LASciFiPanel
     shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
     shaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
@@ -184,7 +184,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: .5, y: 1}
+      scale: {x: 7, y: 1}
       generateMipmaps: 1
       generateAllOutputs: 0
       animationUpdateRate: 0
@@ -317,42 +317,42 @@ SubstanceImporter:
             name: _SpecColor
           second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
     textureParameters:
-    - name: MetalWalls_Tiling_0.5x1_diffuse
+    - name: MetalWalls_Tiling_7x1_diffuse
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_0.5x1_normal
+    - name: MetalWalls_Tiling_7x1_normal
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_0.5x1_specular
+    - name: MetalWalls_Tiling_7x1_specular
       alphaSource: 7
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_0.5x1_emissive
+    - name: MetalWalls_Tiling_7x1_emissive
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_0.5x1_ambientOcclusion
+    - name: MetalWalls_Tiling_7x1_ambientOcclusion
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_0.5x1_height
+    - name: MetalWalls_Tiling_7x1_height
       alphaSource: 0
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_0.5x1_baseColor
+    - name: MetalWalls_Tiling_7x1_baseColor
       alphaSource: 6
       filterMode: 1
       aniso: 1
       wrapMode: 0
-    - name: MetalWalls_Tiling_0.5x1_metallic
+    - name: MetalWalls_Tiling_7x1_metallic
       alphaSource: 7
       filterMode: 1
       aniso: 1
