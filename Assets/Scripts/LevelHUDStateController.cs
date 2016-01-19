@@ -4,10 +4,15 @@ using UnityEngine.UI;
 
 public class LevelHUDStateController : StateMachineBehaviour {
 
+    PlayerController player;
+
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (stateInfo.IsName("Start"))
         {
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            player.movementSpeed = 1.5f;
+            player.rotationSpeed = 0.5f;
         }
         else if (stateInfo.IsName("Intro"))
         {
@@ -19,7 +24,11 @@ public class LevelHUDStateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("CellJitter"))
         {
-            GameObject.Find("ElectricLine").GetComponent<ElectricLineAnimator>().SparkEnabled(false);
+            GameObject cell = GameObject.Find("ElectricLine");
+            cell.GetComponent<ElectricLineAnimator>().SparkEnabled(false);
+            cell.GetComponent<CapsuleCollider>().enabled = false;
+            player.movementSpeed = 5.0f;
+            player.rotationSpeed = 1.5f;
         }
         else if (stateInfo.IsName("FindExit"))
         {
