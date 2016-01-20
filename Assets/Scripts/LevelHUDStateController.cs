@@ -5,12 +5,19 @@ using UnityEngine.UI;
 public class LevelHUDStateController : StateMachineBehaviour {
 
     PlayerController player;
+    InventoryController inventory;
+    GameObject levelController;
+    HeadsetController headset;
 
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (stateInfo.IsName("Start"))
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            inventory = GameObject.Find("Inventory").GetComponent<InventoryController>();
+            levelController = GameObject.Find("LevelController");
+            headset = GameObject.Find("Headset").GetComponent<HeadsetController>();
+
             player.movementSpeed = 1.5f;
             player.rotationSpeed = 0.5f;
         }
@@ -18,15 +25,19 @@ public class LevelHUDStateController : StateMachineBehaviour {
         {
             GameObject.Find("Intro").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
-        else if (stateInfo.IsName("Headset"))
+        else if (stateInfo.IsName("OpenEyes"))
         {
-            GameObject.Find("Headset").GetComponent<HeadsetController>().PlayRandomWhichStartsWith("dark");
+            GameObject.Find("Eyes").GetComponent<Animator>().SetBool("IsOpen", true);
+            GameObject.Find("CenterEyeAnchor").GetComponent<BlurController>().TurnOff();
+        }
+        else if (stateInfo.IsName("ItsDark"))
+        {
+            headset.PlayRandomWhichStartsWith("dark");
         }
         else if (stateInfo.IsName("CellJitter"))
         {
             GameObject cell = GameObject.Find("ElectricLine");
             cell.GetComponent<ElectricLineAnimator>().SparkEnabled(false);
-            cell.GetComponent<CapsuleCollider>().enabled = false;
             player.movementSpeed = 5.0f;
             player.rotationSpeed = 1.5f;
         }
@@ -37,12 +48,12 @@ public class LevelHUDStateController : StateMachineBehaviour {
         else if (stateInfo.IsName("FindKeycard"))
         {
             GameObject.Find("FindKeycard").GetComponent<Animator>().SetTrigger("PlayAnimation");
-            GameObject.Find("LevelController").GetComponent<ObjectSpawner>().Spawn();
+            levelController.GetComponent<ObjectSpawner>().Spawn();
         }
         else if (stateInfo.IsName("GoToTerminal"))
         {
             GameObject.Find("GoToTerminal").GetComponent<Animator>().SetTrigger("PlayAnimation");
-            GameObject.Find("Inventory").GetComponent<InventoryController>().keycardFound();
+            inventory.keycardFound();
         }
         else if (stateInfo.IsName("Escape"))
         {
