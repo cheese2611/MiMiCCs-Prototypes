@@ -13915,7 +13915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   communicationEnabled: 0
   batteryFull: 1
-  hasKeycard: 0
+  hasKeycard: 1
 --- !u!114 &1747761242
 MonoBehaviour:
   m_ObjectHideFlags: 0

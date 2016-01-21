@@ -46,7 +46,7 @@ public class Level1StateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("ItsDark"))
         {
-            voice.Play("dark_03");
+            //voice.Play("dark_03");
         }
         else if (stateInfo.IsName("CellJitter"))
         {
@@ -54,9 +54,13 @@ public class Level1StateController : StateMachineBehaviour {
             player.movementSpeed = 5.0f;
             player.rotationSpeed = 1.5f;
         }
+        else if (stateInfo.IsName("CellOff"))
+        {
+            voice.Play("intro_06");
+        }
         else if (stateInfo.IsName("FindExit"))
         {
-            voice.Play("door_open_00");
+            voice.Play("intro_07");
             GameObject.Find("FindExit").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("Escaped"))
