@@ -12,5 +12,9 @@ public class RestartGame : MonoBehaviour {
         {
             Application.LoadLevel(0);
         }
+        if (Input.GetButton("Interaction"))
+        {
+            GameObject.Find("LevelController").GetComponent<Animator>().SetTrigger("KeyPressed");
+        }
     }
 }

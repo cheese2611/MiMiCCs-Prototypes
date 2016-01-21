@@ -7,6 +7,7 @@ public class EyeController : MonoBehaviour {
     RawImage lidUpper;
     RawImage lidLower;
 
+    public bool visible;
     public float occlusion;
 
 	void Start () {
@@ -15,7 +16,7 @@ public class EyeController : MonoBehaviour {
     }
 
     void Update () {
-	    lidUpper.rectTransform.sizeDelta = new Vector2(0, occlusion * 270);
-        lidLower.rectTransform.sizeDelta = new Vector2(0, occlusion * 270);
+	    lidUpper.rectTransform.sizeDelta = new Vector2(0, visible ? occlusion * 270 : 0);
+        lidLower.rectTransform.sizeDelta = new Vector2(0, visible ? occlusion * 270 : 0);
     }
 }

@@ -8,6 +8,7 @@ public class Level1StateController : StateMachineBehaviour {
     InventoryController inventory;
     GameObject levelController;
     VoiceController voice;
+    EyeController eyes;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (stateInfo.IsName("Start"))
@@ -16,13 +17,20 @@ public class Level1StateController : StateMachineBehaviour {
             inventory = GameObject.Find("Inventory").GetComponent<InventoryController>();
             levelController = GameObject.Find("LevelController");
             voice = GameObject.Find("Voice").GetComponent<VoiceController>();
+            eyes = GameObject.Find("Eyes").GetComponent<EyeController>();
 
             player.movementSpeed = 0.0f;
             player.rotationSpeed = 0.0f;
+            eyes.visible = false;
         }
         else if (stateInfo.IsName("Intro"))
         {
+            OVRManager.DismissHSWDisplay();
             GameObject.Find("Intro").GetComponent<Animator>().SetTrigger("PlayAnimation");
+        }
+        else if (stateInfo.IsName("WaitForEyes"))
+        {
+            eyes.visible = true;
         }
         else if (stateInfo.IsName("OpenEyes"))
         {

@@ -8,6 +8,7 @@ public class LevelHUDStateController : StateMachineBehaviour {
     InventoryController inventory;
     GameObject levelController;
     HeadsetController headset;
+    EyeController eyes;
 
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -17,18 +18,27 @@ public class LevelHUDStateController : StateMachineBehaviour {
             inventory = GameObject.Find("Inventory").GetComponent<InventoryController>();
             levelController = GameObject.Find("LevelController");
             headset = GameObject.Find("Headset").GetComponent<HeadsetController>();
+            eyes = GameObject.Find("Eyes").GetComponent<EyeController>();
 
-            player.movementSpeed = 1.5f;
-            player.rotationSpeed = 0.5f;
+            player.movementSpeed = 0.0f;
+            player.rotationSpeed = 0.0f;
+            eyes.visible = false;
         }
         else if (stateInfo.IsName("Intro"))
         {
+            OVRManager.DismissHSWDisplay();
             GameObject.Find("Intro").GetComponent<Animator>().SetTrigger("PlayAnimation");
+        }
+        else if (stateInfo.IsName("WaitForEyes"))
+        {
+            eyes.visible = true;
         }
         else if (stateInfo.IsName("OpenEyes"))
         {
             GameObject.Find("Eyes").GetComponent<Animator>().SetBool("IsOpen", true);
             GameObject.Find("CenterEyeAnchor").GetComponent<BlurController>().TurnOff();
+            player.movementSpeed = 0.5f;
+            player.rotationSpeed = 0.5f;
         }
         else if (stateInfo.IsName("ItsDark"))
         {
