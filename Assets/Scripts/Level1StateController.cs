@@ -19,8 +19,6 @@ public class Level1StateController : StateMachineBehaviour {
             voice = GameObject.Find("Voice").GetComponent<VoiceController>();
             eyes = GameObject.Find("Eyes").GetComponent<EyeController>();
 
-            player.movementSpeed = 0.0f;
-            player.rotationSpeed = 0.0f;
             eyes.visible = false;
         }
         else if (stateInfo.IsName("Intro"))
@@ -37,13 +35,6 @@ public class Level1StateController : StateMachineBehaviour {
             GameObject.Find("Eyes").GetComponent<Animator>().SetBool("IsOpen", true);
             GameObject.Find("CenterEyeAnchor").GetComponent<BlurController>().TurnOff();
         }
-        else if (stateInfo.IsName("Monolog"))
-        {
-            //voice.
-
-            player.movementSpeed = 0.5f;
-            player.rotationSpeed = 0.5f;
-        }
         else if (stateInfo.IsName("ItsDark"))
         {
             //voice.Play("dark_03");
@@ -51,8 +42,6 @@ public class Level1StateController : StateMachineBehaviour {
         else if (stateInfo.IsName("CellJitter"))
         {
             GameObject.Find("ElectricCellWall").GetComponent<ElectricCellWallAnimator>().SparkEnabled(false); ;
-            player.movementSpeed = 5.0f;
-            player.rotationSpeed = 1.5f;
         }
         else if (stateInfo.IsName("CellOff"))
         {
