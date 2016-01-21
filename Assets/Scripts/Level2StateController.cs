@@ -29,16 +29,19 @@ public class Level2StateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("FindKeycard"))
         {
+            voice.Play("door_closed_00");
             GameObject.Find("FindKeycard").GetComponent<Animator>().SetTrigger("PlayAnimation");
             levelController.GetComponent<ObjectSpawner>().Spawn();
         }
         else if (stateInfo.IsName("GoToTerminal"))
         {
+            voice.Play("keycard_00");
             GameObject.Find("GoToTerminal").GetComponent<Animator>().SetTrigger("PlayAnimation");
             inventory.keycardFound();
         }
         else if (stateInfo.IsName("GoToExit"))
         {
+            voice.Play("door_open_00");
             GameObject.Find("Escape").GetComponent<Animator>().SetTrigger("PlayAnimation");
             GameObject.Find("Exit").GetComponentInChildren<DoorController>().Open();
         }
@@ -48,7 +51,7 @@ public class Level2StateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("LevelChange"))
         {
-            Application.LoadLevel("Room3");
+            Application.LoadLevel("Fadeout");
         }
     }
 

@@ -7,7 +7,6 @@ public class Level3StateController : StateMachineBehaviour {
     PlayerController player;
     InventoryController inventory;
     GameObject levelController;
-    HeadsetController headset;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         if (stateInfo.IsName("Start"))
@@ -15,11 +14,13 @@ public class Level3StateController : StateMachineBehaviour {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
             inventory = GameObject.Find("Inventory").GetComponent<InventoryController>();
             levelController = GameObject.Find("LevelController");
-            headset = GameObject.Find("Headset").GetComponent<HeadsetController>();
+        }
+        else if (stateInfo.IsName("Intro"))
+        {
+            GameObject.Find("Intro").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("Dialog"))
         {
-
         }
         else if (stateInfo.IsName("GoToExit"))
         {
@@ -28,7 +29,7 @@ public class Level3StateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("Escaped"))
         {
-            GameObject.Find("GameOver").GetComponent<Animator>().SetTrigger("PlayAnimation");
+            GameObject.Find("Outro").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
     }
 

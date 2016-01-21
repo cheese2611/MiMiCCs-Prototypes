@@ -26,14 +26,6 @@ public class VoiceController : MonoBehaviour {
         Debug.LogWarning("No clip with name '" + clipStr + "' found");
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            PlayRandomWhichStartsWith("dark");
-        }
-    }
-
     public void PlayRandomWhichStartsWith(string clipStr)
     {
         List<string> matchingClips = new List<string>();

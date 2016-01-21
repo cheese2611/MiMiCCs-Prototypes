@@ -56,6 +56,7 @@ public class Level1StateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("FindExit"))
         {
+            voice.Play("door_open_00");
             GameObject.Find("FindExit").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("Escaped"))
