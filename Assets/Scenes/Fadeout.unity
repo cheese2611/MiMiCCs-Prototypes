@@ -23,9 +23,9 @@ RenderSettings:
   m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
   m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
   m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: .0500000007
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -253,7 +253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &307629883
 Transform:
   m_ObjectHideFlags: 0
@@ -771,7 +771,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 798189825}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: 0, y: 3.25, z: 0}
   m_LocalScale: {x: 14.3999996, y: 1.70000005, z: .200000003}
   m_Children: []
@@ -787,7 +787,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 387411555, guid: 58b0256df762e4e4bb8a4c097fb7c229, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -918,7 +918,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 901504197}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: -1.95000005, y: 1.14999998, z: 0}
   m_LocalScale: {x: 10.5, y: 2.5, z: .200000003}
   m_Children: []
@@ -934,7 +934,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 1702620637, guid: b21a41b9fe36d3f46a4b3ea806260d11, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1089,7 +1089,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 939065238}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: 6.5, y: 1.14999998, z: 0}
   m_LocalScale: {x: 1.39999998, y: 2.5, z: .200000003}
   m_Children: []
@@ -1105,7 +1105,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 1939135870, guid: d9830637ff939f1428df9e99c2e4b65c, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1248,11 +1248,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419372, guid: 695840b0507b9d245ba776d2a788a33e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 196790, guid: 695840b0507b9d245ba776d2a788a33e, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 177288, guid: 695840b0507b9d245ba776d2a788a33e, type: 2}
+      propertyPath: m_Name
+      value: ExitLevelTransit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 695840b0507b9d245ba776d2a788a33e, type: 2}
@@ -1283,7 +1287,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1054587360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .800000012, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1305088051}
@@ -1520,8 +1524,8 @@ Transform:
   - {fileID: 156230180}
   - {fileID: 1415062424}
   - {fileID: 1148298505}
-  - {fileID: 1760020210}
   - {fileID: 1050803712}
+  - {fileID: 1760020210}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1001 &1287849075
@@ -1561,7 +1565,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 418336, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 133668, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
       propertyPath: m_IsActive
