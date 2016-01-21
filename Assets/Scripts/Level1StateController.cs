@@ -46,7 +46,7 @@ public class Level1StateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("ItsDark"))
         {
-            voice.PlayRandomWhichStartsWith("dark");
+            voice.Play("dark_03");
         }
         else if (stateInfo.IsName("CellJitter"))
         {
