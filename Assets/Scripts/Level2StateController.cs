@@ -16,6 +16,8 @@ public class Level2StateController : StateMachineBehaviour {
             inventory = GameObject.Find("Inventory").GetComponent<InventoryController>();
             levelController = GameObject.Find("LevelController");
             voice = GameObject.Find("Voice").GetComponent<VoiceController>();
+
+            GameObject.Find("Intro").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("Monolog"))
         {
@@ -41,6 +43,10 @@ public class Level2StateController : StateMachineBehaviour {
             GameObject.Find("Exit").GetComponentInChildren<DoorController>().Open();
         }
         else if (stateInfo.IsName("Escaped"))
+        {
+            GameObject.Find("Outro").GetComponent<Animator>().SetTrigger("PlayAnimation");
+        }
+        else if (stateInfo.IsName("LevelChange"))
         {
             Application.LoadLevel("Room3");
         }

@@ -60,6 +60,10 @@ public class Level1StateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("Escaped"))
         {
+            GameObject.Find("Outro").GetComponent<Animator>().SetTrigger("PlayAnimation");
+        }
+        else if (stateInfo.IsName("LevelChange"))
+        {
             Application.LoadLevel("Demo");
         }
     }
