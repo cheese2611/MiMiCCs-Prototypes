@@ -81,9 +81,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09889c8d0ed5e244b804dc570f766ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnObject: {fileID: 130374, guid: ebbaf37744c797742978f6df1eccbe3a, type: 2}
-  spawnTag: KeycardSpawn
-  objectName: Keycard
+  spawnObject: {fileID: 0}
+  spawnTag: ObjectSpawn
+  objectName: SpawnedObject
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -110,6 +110,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnTag
+      value: ObjectSpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: objectName
+      value: SpawnedObject
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

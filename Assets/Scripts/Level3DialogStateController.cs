@@ -16,7 +16,6 @@ public class Level3DialogStateController : StateMachineBehaviour {
         }
         else if (stateInfo.IsName("Wait"))
         {
-            inventory.communicationEnabled = false;
         }
         else
         {
@@ -27,12 +26,10 @@ public class Level3DialogStateController : StateMachineBehaviour {
                 if (stateInfo.IsName(sarah))
                 {
                     headset.Play(sarah);
-                    inventory.communicationEnabled = true;
                 }
                 else if (stateInfo.IsName(john))
                 {
                     voice.Play(john);
-                    inventory.communicationEnabled = false;
                 }
             }
         }

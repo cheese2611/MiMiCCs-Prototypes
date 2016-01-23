@@ -6,15 +6,23 @@ public class HeadsetController : MonoBehaviour {
 
     public AudioClip[] clips;
     AudioSource audioSrc;
+    InventoryController inventory;
 
     void Start ()
     {
         audioSrc = GetComponent<AudioSource>();
+        inventory = GameObject.Find("Inventory").GetComponent<InventoryController>();
 	}
 	
+    void Update()
+    {
+        inventory.communicationEnabled = audioSrc.isPlaying;
+    }
+
     public void Play(string clipStr)
     {
-        foreach (AudioClip clip in clips) {
+        foreach (AudioClip clip in clips)
+        {
             if (clip.name == clipStr)
             {
                 audioSrc.Stop();
@@ -24,14 +32,6 @@ public class HeadsetController : MonoBehaviour {
             }
         }
         Debug.LogWarning("No clip with name '" + clipStr + "' found");
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            PlayRandomWhichStartsWith("dark");
-        }
     }
 
     public void PlayRandomWhichStartsWith(string clipStr)

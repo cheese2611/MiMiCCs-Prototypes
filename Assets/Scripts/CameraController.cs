@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour {
         pov = GetComponentInChildren<Camera>();
     }
 
-    void Update () {
+    void LateUpdate () {
         Quaternion rotation = new Quaternion();
         if (VRSettings.enabled)
         {
