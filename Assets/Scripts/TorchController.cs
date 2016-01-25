@@ -3,7 +3,9 @@ using System.Collections;
 
 public class TorchController : MonoBehaviour {
 
-    public bool invertY;
+    public bool isEnabled = true;
+    public bool isOn = true;
+    public bool invertY = false;
 
     Light torch;
 
@@ -27,12 +29,10 @@ public class TorchController : MonoBehaviour {
         // toggle light
         if (Input.GetButtonDown("RightHandAction"))
         {
-            ToggleTorch();
+            isOn = !isOn;
         }
+
+        torch.enabled = isEnabled & isOn;
     }
 
-    void ToggleTorch ()
-    {
-        torch.enabled = !torch.enabled;
-    }
 }

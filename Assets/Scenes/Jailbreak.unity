@@ -1320,6 +1320,14 @@ Prefab:
       propertyPath: clips.Array.data[14]
       value: 
       objectReference: {fileID: 8300000, guid: c1cfcaa499156fb4da8f180628b3ef04, type: 3}
+    - target: {fileID: 11484708, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
+      propertyPath: isEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11484708, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
+      propertyPath: isOn
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
   m_IsPrefabParent: 0
