@@ -5,8 +5,7 @@ public class PlayerInteraction : MonoBehaviour {
 
     public float interactionRange;
 	
-	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, interactionRange/*, -1, QueryTriggerInteraction.Ignore*/) && (hit.collider.gameObject.tag != "Player"))
         {
