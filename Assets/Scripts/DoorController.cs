@@ -10,11 +10,16 @@ public class DoorController : MonoBehaviour {
     public float speed = 0.05f;
     public float goal = 0f;
 
+    public AudioClip clipOpen;
+    public AudioClip clipClose;
+
     Transform door;
+    AudioSource audioSrc;
 
     void Start()
     {
         door = transform.parent.GetChild(1);
+        audioSrc = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -60,11 +65,17 @@ public class DoorController : MonoBehaviour {
     public void Open()
     {
         GoToGoal(1f);
+        audioSrc.Stop();
+        audioSrc.clip = clipOpen;
+        audioSrc.Play();
     }
 
     public void Close()
     {
         GoToGoal(0f);
+        audioSrc.Stop();
+        audioSrc.clip = clipClose;
+        audioSrc.Play();
     }
 
     void OnTriggerEnter(Collider obj)
