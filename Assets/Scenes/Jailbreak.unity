@@ -122,7 +122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
@@ -371,7 +371,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
@@ -538,6 +538,14 @@ Prefab:
     - target: {fileID: 142718, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_Name
       value: ElectricLine3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
@@ -938,6 +946,14 @@ Prefab:
     - target: {fileID: 142718, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_Name
       value: ElectricLine2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
@@ -1368,7 +1384,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
@@ -2514,6 +2530,14 @@ Prefab:
       propertyPath: m_Name
       value: ElectricLine9
       objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
   m_IsPrefabParent: 0
@@ -2999,7 +3023,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
@@ -3417,6 +3441,14 @@ Prefab:
       propertyPath: m_Name
       value: ElectricLine4
       objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
   m_IsPrefabParent: 0
@@ -3534,7 +3566,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
@@ -3823,6 +3855,14 @@ Prefab:
       propertyPath: m_Name
       value: ElectricLine6
       objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
   m_IsPrefabParent: 0
@@ -4066,7 +4106,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
@@ -4285,6 +4325,14 @@ Prefab:
     - target: {fileID: 142718, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_Name
       value: ElectricLine7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
@@ -4635,7 +4683,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
@@ -5022,12 +5070,12 @@ Transform:
   - {fileID: 1896574863}
   - {fileID: 552427685}
   - {fileID: 932861598}
+  - {fileID: 284083032}
   - {fileID: 1865069695}
   - {fileID: 1816594298}
   - {fileID: 2028761732}
-  - {fileID: 284083032}
-  - {fileID: 887936741}
   - {fileID: 1870580986}
+  - {fileID: 887936741}
   - {fileID: 1788037178}
   - {fileID: 1263043834}
   - {fileID: 2140530867}
@@ -5107,6 +5155,14 @@ Prefab:
     - target: {fileID: 142718, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_Name
       value: ElectricLine8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
@@ -5287,6 +5343,14 @@ Prefab:
     - target: {fileID: 142718, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
       propertyPath: m_Name
       value: ElectricLine1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409978, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: playSound
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245852, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a82a66267a1afbd419e5e886b40e705f, type: 2}
@@ -5759,7 +5823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfef738579cd02c40b3b1d63e67b0f84, type: 2}
       propertyPath: m_LocalScale.x
