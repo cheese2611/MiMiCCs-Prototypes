@@ -34,6 +34,7 @@ public class Level1StateController : StateMachineBehaviour {
         {
             GameObject.Find("Eyes").GetComponent<Animator>().SetBool("IsOpen", true);
             GameObject.Find("CenterEyeAnchor").GetComponent<BlurController>().TurnOff();
+            GameObject.Find("ElectricLine5").GetComponent<AudioSource>().Play();
         }
         else if (stateInfo.IsName("ItsDark"))
         {

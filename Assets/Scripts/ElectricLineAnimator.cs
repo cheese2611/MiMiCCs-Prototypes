@@ -4,8 +4,15 @@ using System.Collections;
 public class ElectricLineAnimator : MonoBehaviour {
 
     public bool playSound = true;
+    AudioSource audioSrc;
     public AudioClip clipOn;
-    public AudioClip clipOff;
+    public AudioClip clipSwitchOn;
+    public AudioClip clipSwitchOff;
+
+    void Start()
+    {
+        audioSrc = GetComponent<AudioSource>();
+    }
 
     public void SparkEnabled(bool b)
     {
@@ -16,12 +23,13 @@ public class ElectricLineAnimator : MonoBehaviour {
         }
         if (playSound)
         {
-            AudioSource audioSrc = GetComponent<AudioSource>();
             audioSrc.Stop();
+            audioSrc.loop = false;
+            audioSrc.volume = 0.5f;
             if (b)
-                audioSrc.clip = clipOn;
+                audioSrc.clip = clipSwitchOn;
             else
-                audioSrc.clip = clipOff;
+                audioSrc.clip = clipSwitchOff;
             audioSrc.Play();
         }
         StartCoroutine(BoolDelay(2.0f, CapsuleColliderEnable, b));
@@ -37,6 +45,14 @@ public class ElectricLineAnimator : MonoBehaviour {
     void CapsuleColliderEnable(bool b)
     {
         GetComponent<CapsuleCollider>().enabled = b;
+        if (b)
+        {
+            audioSrc.Stop();
+            audioSrc.loop = true;
+            audioSrc.volume = 0.1f;
+            audioSrc.clip = clipOn;
+            audioSrc.Play();
+        }
     }
 
 }

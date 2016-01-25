@@ -64,18 +64,24 @@ public class DoorController : MonoBehaviour {
 
     public void Open()
     {
-        GoToGoal(1f);
-        audioSrc.Stop();
-        audioSrc.clip = clipOpen;
-        audioSrc.Play();
+        if (isEnabled)
+        {
+            GoToGoal(1f);
+            audioSrc.Stop();
+            audioSrc.clip = clipOpen;
+            audioSrc.Play();
+        }
     }
 
     public void Close()
     {
-        GoToGoal(0f);
-        audioSrc.Stop();
-        audioSrc.clip = clipClose;
-        audioSrc.Play();
+        if (isEnabled)
+        {
+            GoToGoal(0f);
+            audioSrc.Stop();
+            audioSrc.clip = clipClose;
+            audioSrc.Play();
+        }
     }
 
     void OnTriggerEnter(Collider obj)
