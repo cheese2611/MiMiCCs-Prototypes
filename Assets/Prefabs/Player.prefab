@@ -648,7 +648,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 50
-  m_SpotAngle: 90
+  m_SpotAngle: 75
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -769,6 +769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4057dd2d06aeabc4cb5c505358539ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnabled: 1
+  isOn: 1
   invertY: 0
 --- !u!114 &11487122
 MonoBehaviour:
@@ -827,6 +829,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SpotAngle
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

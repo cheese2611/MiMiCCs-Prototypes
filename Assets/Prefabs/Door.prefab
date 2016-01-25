@@ -45,6 +45,7 @@ GameObject:
   - 23: {fileID: 2300002}
   - 65: {fileID: 6500000}
   - 135: {fileID: 13500000}
+  - 82: {fileID: 8233506}
   - 114: {fileID: 11411332}
   - 95: {fileID: 9549370}
   - 114: {fileID: 11429122}
@@ -314,6 +315,76 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5, y: .400000006, z: 2.9000001}
   m_Center: {x: 0, y: 0, z: 1.5}
+--- !u!82 &8233506
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9549370
 Animator:
   serializedVersion: 3
@@ -346,8 +417,10 @@ MonoBehaviour:
   reactToPlayer: 0
   minimum: .075000003
   maximum: 2.29999995
-  speed: .0500000007
+  speed: .0199999996
   goal: 0
+  clipOpen: {fileID: 8300000, guid: 5ddaec0a246664f9694e23a84612eff2, type: 3}
+  clipClose: {fileID: 8300000, guid: e1d95bc5776584d41a5a79be830c6de7, type: 3}
 --- !u!114 &11429122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -394,6 +467,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Convex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: clipOpen
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ddaec0a246664f9694e23a84612eff2, type: 3}
+    - target: {fileID: 0}
+      propertyPath: clipClose
+      value: 
+      objectReference: {fileID: 8300000, guid: e1d95bc5776584d41a5a79be830c6de7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: .0199999996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

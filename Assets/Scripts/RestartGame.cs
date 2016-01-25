@@ -12,6 +12,18 @@ public class RestartGame : MonoBehaviour {
         {
             Application.LoadLevel(0);
         }
+        if (Input.GetKey(KeyCode.F1))
+        {
+            Application.LoadLevel(0);
+        }
+        if (Input.GetKey(KeyCode.F2))
+        {
+            Application.LoadLevel(1);
+        }
+        if (Input.GetKey(KeyCode.F3))
+        {
+            Application.LoadLevel(2);
+        }
         if (Input.GetButton("Interaction"))
         {
             GameObject.Find("LevelController").GetComponent<Animator>().SetTrigger("KeyPressed");
