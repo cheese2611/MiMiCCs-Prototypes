@@ -154,7 +154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &146478
 GameObject:
   m_ObjectHideFlags: 1
@@ -241,6 +241,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &183440
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 407526}
+  - 135: {fileID: 13512232}
+  m_Layer: 2
+  m_Name: PlayerPosition0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &184124
 GameObject:
   m_ObjectHideFlags: 1
@@ -290,6 +306,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &407526
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 483436}
+  m_RootOrder: 2
 --- !u!4 &408740
 Transform:
   m_ObjectHideFlags: 1
@@ -415,7 +443,7 @@ Transform:
   m_GameObject: {fileID: 147406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 2, z: -5.0999999}
-  m_LocalScale: {x: 3.5, y: 4.19999981, z: .400000006}
+  m_LocalScale: {x: 3.5999999, y: 4.19999981, z: .400000006}
   m_Children: []
   m_Father: {fileID: 410266}
   m_RootOrder: 1
@@ -493,6 +521,7 @@ Transform:
   m_Children:
   - {fileID: 435908}
   - {fileID: 416634}
+  - {fileID: 407526}
   m_Father: {fileID: 483696}
   m_RootOrder: 0
 --- !u!4 &483696
@@ -994,6 +1023,8 @@ MonoBehaviour:
   maximum: 2.29999995
   speed: .0500000007
   goal: 0
+  clipOpen: {fileID: 0}
+  clipClose: {fileID: 0}
 --- !u!114 &11471516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1017,6 +1048,18 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &13512232
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .25
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &13593758
 SphereCollider:
