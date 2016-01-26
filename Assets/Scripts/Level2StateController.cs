@@ -19,12 +19,14 @@ public class Level2StateController : StateMachineBehaviour {
 
             GameObject.Find("Intro").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
-        else if (stateInfo.IsName("Monolog"))
+        else if (stateInfo.IsName("TurnLightOn"))
         {
-            //voice.
+            voice.Play("dark_00");
+            GameObject.Find("TurnLightOn").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("FindExit"))
         {
+            voice.PlayRandomWhichStartsWith("light_");
             GameObject.Find("FindExit").GetComponent<Animator>().SetTrigger("PlayAnimation");
         }
         else if (stateInfo.IsName("FindKeycard"))

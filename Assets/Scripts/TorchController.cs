@@ -7,10 +7,12 @@ public class TorchController : MonoBehaviour {
     public bool isOn = true;
     public bool invertY = false;
 
+    Animator levelController;
     Light torch;
 
     void Start ()
     {
+        levelController = GameObject.Find("LevelController").GetComponent<Animator>();
         torch = gameObject.GetComponent<Light>();
     }
 
@@ -30,6 +32,7 @@ public class TorchController : MonoBehaviour {
         if (Input.GetButtonDown("RightHandAction"))
         {
             isOn = !isOn;
+            levelController.SetBool("TorchEnabled", isOn);
         }
 
         torch.enabled = isEnabled & isOn;
