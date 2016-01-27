@@ -22,17 +22,17 @@ AnimationClip:
         value: 1
         inSlope: -.333333343
         outSlope: -.333333343
-        tangentMode: 10
+        tangentMode: 21
       - time: 3
         value: 0
-        inSlope: -.166666672
-        outSlope: -.166666672
-        tangentMode: 10
+        inSlope: -.333333343
+        outSlope: -0
+        tangentMode: 21
       - time: 4
         value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
@@ -46,17 +46,17 @@ AnimationClip:
         value: 1
         inSlope: -.333333343
         outSlope: -.333333343
-        tangentMode: 10
+        tangentMode: 21
       - time: 3
         value: 0
-        inSlope: -.166666672
-        outSlope: -.166666672
-        tangentMode: 10
+        inSlope: -.333333343
+        outSlope: -0
+        tangentMode: 21
       - time: 4
         value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
@@ -109,17 +109,17 @@ AnimationClip:
         value: 1
         inSlope: -.333333343
         outSlope: -.333333343
-        tangentMode: 10
+        tangentMode: 21
       - time: 3
         value: 0
-        inSlope: -.166666672
-        outSlope: -.166666672
-        tangentMode: 10
+        inSlope: -.333333343
+        outSlope: -0
+        tangentMode: 21
       - time: 4
         value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
@@ -133,17 +133,17 @@ AnimationClip:
         value: 1
         inSlope: -.333333343
         outSlope: -.333333343
-        tangentMode: 10
+        tangentMode: 21
       - time: 3
         value: 0
-        inSlope: -.166666672
-        outSlope: -.166666672
-        tangentMode: 10
+        inSlope: -.333333343
+        outSlope: -0
+        tangentMode: 21
       - time: 4
         value: 0
         inSlope: 0
         outSlope: 0
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a

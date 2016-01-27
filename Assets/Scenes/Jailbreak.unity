@@ -5245,6 +5245,10 @@ Prefab:
       propertyPath: m_Text
       value: MiMiCCs
       objectReference: {fileID: 0}
+    - target: {fileID: 9540394, guid: 4aae8ee68e6efc44f9838c802be611f5, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 64c847b1ee913aa44a021e1f0df9aa15, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4aae8ee68e6efc44f9838c802be611f5, type: 2}
   m_IsPrefabParent: 0

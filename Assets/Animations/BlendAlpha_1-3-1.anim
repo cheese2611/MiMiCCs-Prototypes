@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: BlendAlpha_1-2-1
+  m_Name: BlendAlpha_1-3-1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,37 +22,22 @@ AnimationClip:
         value: 0
         inSlope: .5
         outSlope: .5
-        tangentMode: 10
+        tangentMode: 21
       - time: 1
         value: .5
-        inSlope: .25
-        outSlope: .25
-        tangentMode: 10
-      - time: 1.16666663
-        value: .5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2
-        value: .5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2.83333325
-        value: .5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 3
-        value: .5
-        inSlope: -.25
-        outSlope: -.25
-        tangentMode: 10
+        inSlope: .5
+        outSlope: -0
+        tangentMode: 21
       - time: 4
+        value: .5
+        inSlope: 0
+        outSlope: -.5
+        tangentMode: 21
+      - time: 5
         value: 0
         inSlope: -.5
         outSlope: -.5
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
@@ -66,37 +51,22 @@ AnimationClip:
         value: 0
         inSlope: 1
         outSlope: 1
-        tangentMode: 10
+        tangentMode: 21
       - time: 1
         value: 1
-        inSlope: .5
-        outSlope: .5
-        tangentMode: 10
-      - time: 1.16666663
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2.83333325
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 3
-        value: 1
-        inSlope: -.5
-        outSlope: -.5
-        tangentMode: 10
+        inSlope: 1
+        outSlope: -0
+        tangentMode: 21
       - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: -1
+        tangentMode: 21
+      - time: 5
         value: 0
         inSlope: -1
         outSlope: -1
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
@@ -127,7 +97,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 4
+    m_StopTime: 5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -149,37 +119,22 @@ AnimationClip:
         value: 0
         inSlope: .5
         outSlope: .5
-        tangentMode: 10
+        tangentMode: 21
       - time: 1
         value: .5
-        inSlope: .25
-        outSlope: .25
-        tangentMode: 10
-      - time: 1.16666663
-        value: .5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2
-        value: .5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2.83333325
-        value: .5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 3
-        value: .5
-        inSlope: -.25
-        outSlope: -.25
-        tangentMode: 10
+        inSlope: .5
+        outSlope: -0
+        tangentMode: 21
       - time: 4
+        value: .5
+        inSlope: 0
+        outSlope: -.5
+        tangentMode: 21
+      - time: 5
         value: 0
         inSlope: -.5
         outSlope: -.5
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a
@@ -193,37 +148,22 @@ AnimationClip:
         value: 0
         inSlope: 1
         outSlope: 1
-        tangentMode: 10
+        tangentMode: 21
       - time: 1
         value: 1
-        inSlope: .5
-        outSlope: .5
-        tangentMode: 10
-      - time: 1.16666663
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 2.83333325
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 3
-        value: 1
-        inSlope: -.5
-        outSlope: -.5
-        tangentMode: 10
+        inSlope: 1
+        outSlope: -0
+        tangentMode: 21
       - time: 4
+        value: 1
+        inSlope: 0
+        outSlope: -1
+        tangentMode: 21
+      - time: 5
         value: 0
         inSlope: -1
         outSlope: -1
-        tangentMode: 10
+        tangentMode: 21
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.a

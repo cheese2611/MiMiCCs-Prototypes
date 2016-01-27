@@ -4721,7 +4721,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428372, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11422414, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
       propertyPath: clips.Array.data[0]
@@ -4787,10 +4787,6 @@ Prefab:
       propertyPath: clips.Array.data[15]
       value: 
       objectReference: {fileID: 8300000, guid: c94542732858f6f40a91d3a1b012774e, type: 3}
-    - target: {fileID: 10832374, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
-      propertyPath: m_SpotAngle
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 11484708, guid: 51a76536ed01e314eaeeaea8fa23ca85, type: 2}
       propertyPath: isOn
       value: 0
